@@ -1,39 +1,65 @@
 <html>
-  <haded>
-    <title>ACME Car Rental</title>
-  </haded>
-  <body>
-    <div> 
-      <input id ="pikupdateBtn"type="button">
-      <input id="numbers"type="button" >
-       
+<haded>
+  <title>ACME Car Rental</title>
+</haded>
+
+<body>
+  <div>
+    <div class="row">
+      <div class="col">
+        <label>Pickup Date:</label>
+        <input id="inputPickupDate" type="date">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label>Number of days:</label>
+        <input id="inputNumOfDays" type="number" value="1">
+      </div>
+    </div>
   </div>
-    <div>
-      <p> Options</p>
+  <div>
+    <p> Options</p>
 
-<input type="checkbox" id="inputoptelectronictollcheckbox" >
-<label for="vehicle1"> Electronic Toll Tag ($3.95/day)</label><br>
-<input type="checkbox" id="Opt" name="vehicle2" value="Car">
-<label for="vehicle2"> GPS($2.95/day)</label><br>
-<input type="checkbox" id="Option3" name="vehicle3" value="Boat">
-<label for="Option3"> Roadside Assistance($2.95/day)</label><br>
-    </div>
-    <div>
-      <P>  Under 25></P>
-      <input type="checkbox" id="" name="under25" value="No">
-<label >NO </label>
-<input type="checkbox" id="" name="under25" value="Yes">
-<label for="vehicle2"> YES</label><br>
-    </div>
-    <div>
-      <label> Estimate Total Cost</label>
-    <input type="button" >
-    </div>
-    <div>
-      <label for="">Car rental</label>
-      
-    </div>
+    <input type="checkbox" id="inputoptelectronictollcheckbox">
+    <label for="vehicle1"> Electronic Toll Tag ($3.95/day)</label><br>
+    <input type="checkbox" id="Opt" name="vehicle2" value="Car">
+    <label for="vehicle2"> GPS($2.95/day)</label><br>
+    <input type="checkbox" id="Option3" name="vehicle3" value="Boat">
+    <label for="Option3"> Roadside Assistance($2.95/day)</label><br>
+  </div>
+  <div>
+    <P> Under 25></P>
+    <input type="checkbox" id="" name="under25" value="No">
+    <label>NO </label>
+    <input type="checkbox" id="" name="under25" value="Yes">
+    <label for="vehicle2"> YES</label><br>
+  </div>
+  <div class="row my-3">
+  <div class="col">
+    <button id="estimateTotalCostButton" class="btn btn-primary" type="button">Estimate Total Cost</button>
+  </div>
+  </div>
+  <div>
+    <label for="">Car rental</label>
+  </div>
+  <div>
+    <label>Options: </label>
+    <span id="outputOptions">xxx.xx</span>
+  </div>
+  <div>
+    <label>Under 25 surcharge: </label>
+    <span id="outputSurcharge">xxx.xx</span>
+  </div>
+  <div>
+    <hr>
+    <label>Total Due: </label>
+    <span id="outputTotal">xxx.xx</span>
+  </div>
 
-         <Script></Script>
-  </body>
+
+  <Script src="scripts/site.js"> </Script>
+</body>
+
 </html>
